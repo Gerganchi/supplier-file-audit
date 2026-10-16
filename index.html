@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Audit supplier CSV price lists before updating your online store. Find duplicate SKUs, missing costs, and unexpected changes. Free local demo.">
+<title>Supplier File Audit — Check supplier price lists before import</title>
+<style>
+:root{color-scheme:light;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#16343a;background:#f5f8f6}
+*{box-sizing:border-box}body{margin:0}a{color:inherit}button,a{outline-offset:4px}
+.shell{width:min(1100px,calc(100% - 40px));margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:23px 0}
+.brand{display:flex;align-items:center;gap:11px;font-size:14px;font-weight:850;letter-spacing:.055em}
+.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#167565;color:white;font-size:19px}
+.lang{border:1px solid #c5d6d2;border-radius:9px;padding:9px 13px;background:white;color:#26464c;font-weight:700}
+.hero{background:#12363d;color:#fff;border-radius:26px;padding:clamp(27px,5.6vw,68px);display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(30px,5vw,60px);align-items:center;margin:17px 0 24px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:#a5e4d1}
+h1{font-size:clamp(35px,4.2vw,59px);letter-spacing:-.045em;line-height:1.09;margin:17px 0}
+.hero p{color:#dbedeb;font-size:17px;line-height:1.65;max-width:515px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 18px}
+.btn{display:inline-flex;justify-content:center;align-items:center;border-radius:11px;padding:15px 20px;font-weight:750;text-decoration:none;font-size:14px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.primary{background:#c9f1d6;color:#143c36}.outline{border:1px solid #769a9a;color:white}
+.note{font-size:12px!important;color:#b1cdcd!important;margin:0}
+.panel{background:#f7fcf9;color:#1b3740;border-radius:16px;padding:24px;box-shadow:0 19px 60px #081f2940}
+.panel-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:19px;font-size:14px;font-weight:800}
+.demo-tag{background:#e2efe7;color:#237258;border-radius:99px;padding:6px 10px;font-size:11px}
+.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.stat{border:1px solid #e1e9e5;border-radius:12px;padding:13px 10px;background:white}.stat small{display:block;color:#6c7d7e;font-size:11px}.stat strong{font-size:29px;display:block;margin-top:8px}.red{color:#be4850}.amber{color:#a87719}.green{color:#2a8a6c}
+.tbl{width:100%;border-collapse:collapse;margin-top:18px;font-size:13px}.tbl td{padding:11px 2px;border-bottom:1px solid #e1e9e7}.tbl td:last-child{text-align:right;font-weight:700}
+.sec{padding:53px 0 16px}h2{font-size:clamp(24px,2.9vw,38px);line-height:1.18;letter-spacing:-.035em;margin:0 0 12px}
+.lead{color:#597077;line-height:1.65;max-width:720px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}
+.card{background:white;border:1px solid #dce8e4;border-radius:15px;padding:24px;box-shadow:0 5px 18px #173d3607}
+.step{display:inline-flex;background:#e0f2e8;color:#1e7558;border-radius:10px;padding:9px 12px;font-size:13px;font-weight:900}
+.card h3{font-size:17px;line-height:1.35;margin:18px 0 8px}.card p{color:#62767b;font-size:14px;line-height:1.62;margin-bottom:0}
+.checklist{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:23px 0}.check{border:1px solid #dae6e1;background:#fff;border-radius:11px;padding:16px;font-size:14px}
+.check b{color:#20775d;margin-right:9px}
+.bottom{background:#e7f2ed;border-radius:18px;padding:32px;margin:50px 0 26px}
+.bottom p{color:#45666b;max-width:700px;line-height:1.6}
+.bottom .primary{background:#177464;color:white}
+footer{border-top:1px solid #dbe8e1;padding:25px 0 40px;color:#6b7d7e;font-size:12px;line-height:1.6}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.checklist{grid-template-columns:1fr}.shell{width:min(100% - 28px,1100px)}.panel{padding:17px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<nav><div class="brand"><span class="mark">✓</span><span>SMALL BUSINESS STACK</span></div><select id="language" class="lang" aria-label="Language / Език"><option value="en">English</option><option value="bg">Български</option></select></nav>
+<main>
+<section class="hero">
+<div>
+<div class="eyebrow" data-i18n="eyebrow">FREE • LOCAL CSV AUDIT DEMO</div>
+<h1 data-i18n="headline">Spot risky supplier file changes before you update your store.</h1>
+<p data-i18n="subhead">Compare two supplier price lists, find missing or duplicate SKUs and suspicious cost changes, then download a clear Excel audit report.</p>
+<div class="actions"><a class="btn primary" href="./demo/index.html" data-i18n="cta">Open online demo →</a><a class="btn outline" href="#how" data-i18n="learn">See how it works</a></div>
+<p class="note" data-i18n="privacy">No sign-up • No payment • Files are processed in your browser</p>
+</div>
+<div class="panel" aria-label="Illustrative example">
+<div class="panel-top"><span data-i18n="sample">Illustrative audit snapshot</span><span class="demo-tag" data-i18n="sampletag">SAMPLE DATA</span></div>
+<div class="mini-grid"><div class="stat"><small data-i18n="blocks">Blocking issues</small><strong class="red">5</strong></div><div class="stat"><small data-i18n="reviews">Review flags</small><strong class="amber">5</strong></div><div class="stat"><small data-i18n="report">Excel report</small><strong class="green">.xlsx</strong></div></div>
+<table class="tbl"><tbody>
+<tr><td data-i18n="dup">Duplicate SKU</td><td class="red">SKU-107</td></tr>
+<tr><td data-i18n="cost">Missing cost</td><td class="red">SKU-105</td></tr>
+<tr><td data-i18n="increase">Unexpected price increase</td><td class="amber">+40%</td></tr>
+</tbody></table>
+</div>
+</section>
+<section id="how" class="sec"><h2 data-i18n="howTitle">Three steps. A clearer supplier file.</h2><p class="lead" data-i18n="howIntro">See potential problems before making changes to your product catalogue. The demo does not modify your store.</p>
+<div class="cards">
+<div class="card"><span class="step">01</span><h3 data-i18n="s1">Load two CSV files</h3><p data-i18n="s1p">Choose your previous and current supplier price lists, or use the included sample data.</p></div>
+<div class="card"><span class="step">02</span><h3 data-i18n="s2">Review flagged rows</h3><p data-i18n="s2p">Find missing identifiers, duplicates, invalid costs and unusual cost changes.</p></div>
+<div class="card"><span class="step">03</span><h3 data-i18n="s3">Download an Excel audit</h3><p data-i18n="s3p">Get a structured report with a summary, flagged issues and instructions.</p></div>
+</div></section>
+<section class="sec"><h2 data-i18n="whoTitle">Built for hands-on store operators</h2><p class="lead" data-i18n="whoIntro">A first prototype for Shopify and WooCommerce sellers, catalogue managers and small e-commerce agencies working with supplier CSV files.</p>
+<div class="checklist"><div class="check"><b>✓</b><span data-i18n="f1">Duplicate and missing SKUs</span></div><div class="check"><b>✓</b><span data-i18n="f2">Missing or invalid cost values</span></div><div class="check"><b>✓</b><span data-i18n="f3">Large supplier price changes</span></div><div class="check"><b>✓</b><span data-i18n="f4">Added and removed products</span></div></div>
+<p class="lead" style="font-size:13px" data-i18n="limit">Early prototype: checks only supported CSV structures and selected error types. A clean result does not guarantee that a file is safe to import. Always review changes before updating a store.</p>
+</section>
+<section class="sec" id="feedback"><h2 data-i18n="feedbackTitle">Help improve Supplier File Audit</h2><p class="lead" data-i18n="feedbackBody">Do you work with supplier price lists? Tell us what is missing. The short survey opens in Google Forms; no email address is requested.</p><a class="btn primary" href="https://forms.gle/ZxumFEPRBe79wach7" target="_blank" rel="noopener noreferrer" data-i18n="feedbackCta">Give feedback →</a></section>
+<section class="bottom"><h2 data-i18n="bottomTitle">Try a real audit with sample files</h2><p data-i18n="bottomBody">Open the interactive demo and use “Load built-in sample” to see the report. No account or payment required.</p><a class="btn primary" href="./demo/index.html" data-i18n="bottomCta">Open Supplier File Audit →</a></section>
+</main><footer><div data-i18n="footer">© Small Business Stack · Research prototype, not a production-ready Shopify importer. No store connection or automatic updates.</div></footer>
+</div>
+<script>
+const translations = {
+ en:{eyebrow:"FREE • LOCAL CSV AUDIT DEMO",headline:"Spot risky supplier file changes before you update your store.",subhead:"Compare two supplier price lists, find missing or duplicate SKUs and suspicious cost changes, then download a clear Excel audit report.",cta:"Open online demo →",learn:"See how it works",privacy:"No sign-up • No payment • Files are processed in your browser",sample:"Illustrative audit snapshot",sampletag:"SAMPLE DATA",blocks:"Blocking issues",reviews:"Review flags",report:"Excel report",dup:"Duplicate SKU",cost:"Missing cost",increase:"Unexpected price increase",howTitle:"Three steps. A clearer supplier file.",howIntro:"See potential problems before making changes to your product catalogue. The demo does not modify your store.",s1:"Load two CSV files",s1p:"Open the online tool and click Load built-in sample, or choose your own supplier CSV files.",s2:"Review flagged rows",s2p:"Find missing identifiers, duplicates, invalid costs and unusual cost changes.",s3:"Download an Excel audit",s3p:"Get a structured report with a summary, flagged issues and instructions.",whoTitle:"Built for hands-on store operators",whoIntro:"A first prototype for Shopify and WooCommerce sellers, catalogue managers and small e-commerce agencies working with supplier CSV files.",f1:"Duplicate and missing SKUs",f2:"Missing or invalid cost values",f3:"Large supplier price changes",f4:"Added and removed products",limit:"Early prototype: checks only supported CSV structures and selected error types. A clean result does not guarantee that a file is safe to import. Always review changes before updating a store.",bottomTitle:"Try a real audit with sample files",bottomBody:"Open the interactive demo and use “Load built-in sample” to see the report. No account or payment required.",bottomCta:"Open Supplier File Audit →",feedbackTitle:"Help improve Supplier File Audit",feedbackBody:"Do you work with supplier price lists? Tell us what is missing. The short survey opens in Google Forms; no email address is requested.",feedbackCta:"Give feedback →",footer:"© Small Business Stack · Research prototype, not a production-ready Shopify importer. No store connection or automatic updates."},
+ bg:{eyebrow:"БЕЗПЛАТНО • ЛОКАЛНА ПРОВЕРКА НА CSV",headline:"Открий рисковите промени в доставните файлове, преди да обновиш магазина си.",subhead:"Сравни два доставни ценови листа, открий липсващи или дублирани SKU и необичайни промени в цените, след което изтегли Excel отчет.",cta:"Отвори онлайн демото →",learn:"Как работи",privacy:"Без регистрация • Без плащане • Файловете се обработват в браузъра ти",sample:"Примерно обобщение",sampletag:"ПРИМЕРНИ ДАННИ",blocks:"Блокиращи грешки",reviews:"За преглед",report:"Excel отчет",dup:"Дублиран SKU",cost:"Липсваща цена",increase:"Необичайно поскъпване",howTitle:"Три стъпки. По-ясен доставен файл.",howIntro:"Виж потенциалните проблеми, преди да променяш продуктовия каталог. Демото не прави промени в магазина.",s1:"Зареди два CSV файла",s1p:"Отвори онлайн инструмента и натисни „Зареди примерните данни“ или избери собствени CSV файлове.",s2:"Прегледай предупрежденията",s2p:"Открий липсващи идентификатори, дублирания, невалидни цени и необичайни промени.",s3:"Изтегли Excel отчет",s3p:"Получаваш обобщение, списък с проблемите и инструкции в отделни листове.",whoTitle:"За хората, които сами управляват каталога",whoIntro:"Първи прототип за Shopify и WooCommerce търговци, продуктови мениджъри и малки e-commerce агенции, които работят с доставни CSV файлове.",f1:"Дублирани и липсващи SKU",f2:"Липсващи или невалидни цени",f3:"Големи промени в доставните цени",f4:"Добавени и премахнати продукти",limit:"Ранен прототип: проверява само поддържаните структури и определени типове грешки. Липсата на предупреждения не гарантира, че файлът е безопасен за импорт. Винаги преглеждай промените.",bottomTitle:"Направи истинска проверка с примерните файлове",bottomBody:"Отвори интерактивното демо и избери „Зареди примерните данни“. Не е необходима регистрация или плащане.",bottomCta:"Отвори Supplier File Audit →",feedbackTitle:"Помогни ни да подобрим Supplier File Audit",feedbackBody:"Работиш ли с доставни ценови листи? Кажи какво липсва. Кратката анкета се отваря в Google Forms; не изискваме имейл адрес.",feedbackCta:"Сподели мнение →",footer:"© Small Business Stack · Прототип за проучване, не готов Shopify importer. Без връзка с магазин и без автоматични промени."}
+};
+const selector=document.getElementById('language');
+function setLanguage(lang){document.documentElement.lang=lang;for(const el of document.querySelectorAll('[data-i18n]')){const key=el.dataset.i18n;el.textContent=translations[lang][key]||translations.en[key]}document.title=lang==='bg'?'Supplier File Audit — Провери доставните ценови листи':'Supplier File Audit — Check supplier price lists before import';selector.value=lang}
+selector.addEventListener('change',()=>setLanguage(selector.value));
+setLanguage((navigator.language||'').toLowerCase().startsWith('bg')?'bg':'en');
+</script>
+</body></html>
